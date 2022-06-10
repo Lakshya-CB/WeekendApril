@@ -22,7 +22,7 @@ public class Subarray {
 
 	public static int Kadence(int[] arr) {
 		int sum = 0;
-		int max_sum = 0;
+		int max_sum = Integer.MIN_VALUE;
 		for (int i = 0; i < arr.length; i++) {
 			sum = sum + arr[i];
 			max_sum = Math.max(max_sum, sum);
